@@ -1,0 +1,109 @@
+/*
+# ------------------------------------------------------------------------
+# Extensions for Joomla 2.5.x - Joomla 3.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2011-2015 Ext-Joom.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2.
+# Author: Ext-Joom.com
+# Websites:  http://www.ext-joom.com 
+# Date modified: 20/09/2013 - 13:00
+# ------------------------------------------------------------------------
+*/
+
+.mod_ext_yandex_weather_wrap {
+	color: #333;
+}
+
+.mod_ext_yandex_weather_wrap tr,
+.mod_ext_yandex_weather_wrap td {
+	padding: 10px 15px;
+	border: 0;
+}
+.mod_ext_yandex_weather_wrap td {
+	background-color: #f9f9f9;
+}
+
+.mod_ext_yandex_weather_wrap .ext_yandex_weather_info td {
+	background-color: #fff;
+}
+
+.mod_ext_yandex_weather_wrap .ext_td_day_of_week,
+.mod_ext_yandex_weather_wrap .ext_td_day_and_month {
+	background-color: #fff;
+	padding: 0 10px 0 0;
+}
+.mod_ext_yandex_weather_wrap .ext_tr_clear td {
+	background-color: #fff;
+	height: 1.5em;
+}
+
+.mod_ext_yandex_weather_wrap .ext_temperature{
+	font-size: 20px;
+	font-weight: normal;
+	color: #333;
+}
+.mod_ext_yandex_weather_wrap  .ext_img {	
+}
+.mod_ext_yandex_weather_wrap  .ext_time_of_day {
+	color: #666;
+}	
+.mod_ext_yandex_weather_wrap .ext_td_day_of_week {
+	vertical-align: top;
+	padding: 0;
+}
+.mod_ext_yandex_weather_wrap .ext_day {
+	font-size: 32px;
+	font-weight: bolder;
+	color: #333;
+}
+.mod_ext_yandex_weather_wrap .ext_month {
+	font-size: 14px;
+	padding-top: 2px;
+	color: #333;
+}
+.mod_ext_yandex_weather_wrap  .ext_weather_type {
+
+}
+.mod_ext_yandex_weather_wrap .ext_wind {
+	width: 50px;
+}
+.mod_ext_yandex_weather_wrap  .ext_wind_direction {
+	float: left;
+}
+.mod_ext_yandex_weather_wrap  .ext_wind_speed {
+	padding-top: 6px;
+}
+
+/* current weather*/
+.mod_ext_yandex_weather_wrap .ext_current_weather_temperature {
+	font-size: 32px;
+	padding: 0;
+}
+.mod_ext_yandex_weather_wrap  .ext_current_weather_image_weather_type {
+	padding: 5px;
+}
+.mod_ext_yandex_weather_wrap .ext_current_weather_block  span{
+	color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

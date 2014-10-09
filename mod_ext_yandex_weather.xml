@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>EXT Yandex Weather for Russia</name>
+	<author>Ext-Joom.com</author>
+	<creationDate>02/10/2014</creationDate>
+	<copyright>Copyright (C) 2011-2015 Ext-Joom.com. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>extjoom@gmail.om</authorEmail>
+	<authoralt>http://www.ext-joom.com/</authoralt>
+	<version>1.0</version>
+	<description>The module displays Yandex weather for the city.</description>
+	
+	<files>	
+		<filename module="mod_ext_yandex_weather">mod_ext_yandex_weather.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_ext_yandex_weather.php</filename>
+		<filename>mod_ext_yandex_weather.xml</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>	
+    </files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_ext_yandex_weather.ini</language>
+		<language tag="en-GB">en-GB.mod_ext_yandex_weather.sys.ini</language>
+		<language tag="ru-RU">ru-RU.mod_ext_yandex_weather.ini</language>
+		<language tag="ru-RU">ru-RU.mod_ext_yandex_weather.sys.ini</language>		
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">	
+				<field
+					name="cityid"
+					type="text"
+					default="27612"
+					label="MOD_EXT_WEATHER_CITYID_LABEL"
+					description="MOD_EXT_WEATHER_CITYID_DESC" />
+				
+			
+				
+				
+				<field type="spacer" label="CURRENT_WEATHER_SPACER" />
+				
+				
+				<field
+					name="ext_current_weather"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_CURRENT_WEATHER_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_CURRENT_WEATHER_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				
+					<field
+					name="ext_current_show_t"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_T_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_T_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_current_show_img"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_IMG_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_IMG_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_current_show_cloud"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_CLOUD_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_CLOUD_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_current_show_w"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_W_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_W_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_current_show_h"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_H_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_H_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_current_show_p"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_P_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_P_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				
+				
+				
+				
+				
+				
+				
+				<field type="spacer" label="WEATHER_SPACER" />
+				
+				<field
+					name="ext_weather"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_WEATHER_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_WEATHER_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="count_day"
+					type="text"
+					default="3"
+					label="MOD_EXT_WEATHER_COUNT_DAY_LABEL"
+					description="MOD_EXT_WEATHER_COUNT_DAY_DESC" />					
+				
+				
+				<field
+					name="ext_show_img"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_IMG_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_IMG_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_show_cloud"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_CLOUD_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_CLOUD_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_show_w"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_W_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_W_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_show_h"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_H_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_H_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="ext_show_p"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="MOD_EXT_WEATHER_SHOW_P_LABEL"
+					description="MOD_EXT_WEATHER_SHOW_P_DESC" >
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				
+			</fieldset>
+		
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+					
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
